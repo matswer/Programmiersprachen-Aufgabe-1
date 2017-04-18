@@ -24,8 +24,10 @@ REQUIRE (gcd (3 ,7) == 1);
 
 int checksum (int c) 
 {
-    return c;
-    }
+  
+  
+  return c;
+}
 
 
 TEST_CASE ("describe_checksum", "[checksum]")
