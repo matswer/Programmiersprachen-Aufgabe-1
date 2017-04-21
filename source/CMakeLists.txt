@@ -3,6 +3,8 @@ add_executable(helloworld helloworld.cpp)
 
 add_executable(Mats_Test Mats_Test.cpp)
 
+add_executable(Aufgabe_1_3 Aufgabe_1_3.cpp)
+
 
 add_executable(tests tests.cpp)
 
