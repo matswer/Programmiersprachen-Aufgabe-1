@@ -2,7 +2,7 @@
 using namespace std; // Namensraum finden
 # define CATCH_CONFIG_RUNNER
 # include <catch.hpp>
-# include <cmath>
+
 
 int count_numbers (int c) {
    int count =0;
