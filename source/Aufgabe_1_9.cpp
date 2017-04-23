@@ -1,17 +1,8 @@
 # include <iostream> // Header
 using namespace std; // Namensraum finden
+# define CATCH_CONFIG_RUNNER
+# include <catch.hpp>
 # include <cmath>
-
-int checksum (int c);
-int main ()
-{
-    int c = 0;
-    cout << "Bitte Zahl eingeben" << endl;
-    cin >> c;
-    cout << checksum (c) << endl;
-    return 0;
-}
-
 
 int count_numbers (int c) {
    int count =0;
@@ -37,4 +28,16 @@ int checksum (int c)
 
         }
   return temp3;
+}
+
+
+TEST_CASE ("describe_checksum", "[checksum]")
+{
+REQUIRE (checksum (117250) == 16); 
+
+}
+
+int main(int argc, char* argv[])
+{
+  return Catch::Session().run(argc, argv);
 }
