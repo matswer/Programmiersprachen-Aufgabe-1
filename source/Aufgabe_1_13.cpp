@@ -3,11 +3,11 @@ using namespace std; // Namensraum finden
 # define CATCH_CONFIG_RUNNER
 # include <catch.hpp>
 
-int a, temp, i;
-
-int factorial (int a) {
+unsigned int factorial (unsigned int a) {
+    if (a < 1)
+      return 1;
     int temp = 1;
-    for (i = 1; i <= a; i++){
+    for (unsigned int i = 1; i <= a; i++){
         temp = i * temp;
         } 
     

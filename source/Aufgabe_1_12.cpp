@@ -7,16 +7,9 @@
 using namespace std; // Namensraum finden
 
 
-int r = 0;
-int h = 0;
-
 int cylinder_s (int r, int h) {
 
-    int s = 0;
-
-    s = 2 * M_PI * r * (r + h);
-
-    return s;  
+    return 2 * M_PI * r * (r + h);  
 }
 
 int cylinder_v (int r, int h) {

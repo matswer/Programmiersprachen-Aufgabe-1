@@ -14,16 +14,14 @@ bool is_prime(int number)
     for(int i=2; i < number; i++)
     {
        if(number%i == 0)
-          {prime = false;}
-       else 
-          {prime = true;}
-    return prime;
-    }  
+          return false;
+    } 
+    return true;
 }
 
 TEST_CASE ("is_prime", "[is_prime]")
 {
-REQUIRE(is_prime (2) == false);
+REQUIRE(is_prime (2) == true);
 REQUIRE(is_prime (6) == false);
 REQUIRE(is_prime (4) == false);
 REQUIRE(is_prime (7) == true);

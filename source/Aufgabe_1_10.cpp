@@ -6,10 +6,10 @@ using namespace std; // Namensraum finden
 int temp, i;
 
 int sumMultiples () {
-    int temp = 0;
-    for (i = 1; i <= 1000; i++){
-        if (i%3 == 0 || i%5 == 0){
-            temp = i + temp;
+    int temp = 0;                               
+    for (i = 1; i <= 1000; i++){                        // Schleife von 1 bis 1000
+        if (i%3 == 0 || i%5 == 0){                      // Oder Bedingung durch 3 oder 5 teilbar
+            temp = i + temp;                            // Summiert Werte auf
         } 
     }
     return temp;
