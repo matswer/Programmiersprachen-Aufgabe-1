@@ -13,10 +13,11 @@ bool is_prime(int number)
     int i = 0;
     for(int i=2; i < number; i++)
     {
-       if(number%i != 0)
-          {prime = true;}
-       else 
+       if(number%i == 0)
           {prime = false;}
+       else 
+          {prime = true;}
+    return prime;
     }  
 }
 
