@@ -18,7 +18,7 @@ int sumMultiples () {
 
 TEST_CASE ("describe_sumMultiples", "[sumMultiples]")
 {
-REQUIRE (sumMultiples ()); 
+REQUIRE (sumMultiples () == 234168); 
 
 }
 

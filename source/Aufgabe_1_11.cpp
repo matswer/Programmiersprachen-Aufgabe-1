@@ -1,7 +1,8 @@
 # include <iostream> // Header
-using namespace std; // Namensraum finden
 # define CATCH_CONFIG_RUNNER
-# include <catch.hpp>
+# include <catch.hpp>  
+
+using namespace std; // Namensraum finden
 
 float a, c;
 
@@ -13,13 +14,13 @@ float fract (float a) {
     return c;
     }
 
-   
 
 TEST_CASE ("describe_fract", "[fract]")
 {
-REQUIRE(0.76 == Approx(1.76));
-REQUIRE(0.22 == Approx(6.22));
-
+REQUIRE(fract(1.76) == Approx(0.76));
+REQUIRE(fract(6.22) == Approx(0.22));
+REQUIRE(fract(9.4234) == Approx(0.4234));
+REQUIRE(fract(22.12345) == Approx(0.12345));
 }
 
 int main(int argc, char* argv[])

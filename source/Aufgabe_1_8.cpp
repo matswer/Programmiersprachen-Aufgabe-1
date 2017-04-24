@@ -1,5 +1,4 @@
 # include <iostream> // Header
-
 using namespace std; // Namensraum finden
 
 # define CATCH_CONFIG_RUNNER

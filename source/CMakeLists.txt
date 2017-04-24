@@ -13,10 +13,16 @@ add_executable(Aufgabe_1_10 Aufgabe_1_10.cpp)
 
 add_executable(Aufgabe_1_11 Aufgabe_1_11.cpp)
 
+add_executable(Aufgabe_1_12 Aufgabe_1_12.cpp)
+
+add_executable(Aufgabe_1_13 Aufgabe_1_13.cpp)
+
+add_executable(Aufgabe_1_14 Aufgabe_1_14.cpp)
+
+add_executable(Aufgabe_1_15 Aufgabe_1_15.cpp)
 
 add_executable(tests tests.cpp)
 
-# Kommentieren Sie die folgenden Zeilen für die Aufgabe `mileToKilometer` aus
 
 add_executable(mileToKilometer mileToKilometer.cpp)
 
