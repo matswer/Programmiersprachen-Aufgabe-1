@@ -7,8 +7,8 @@ using namespace std; // Namensraum finden
 float a, c;
 
 float fract (float a) {
-    int   b = static_cast<int>(a);
-    float d = static_cast<float>(b);
+    int   b = static_cast<int>(a);        // Überführt 
+    float d = static_cast<int>(b);        //
     
     c = a - d;
     return c;

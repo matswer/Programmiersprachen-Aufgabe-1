@@ -17,7 +17,8 @@ int main ()
 
     cout << "Umrechnung erfolgt :\n";
     cout << a << " Meilen sind umgerechnet " << c << " Kilometer\n";
-    cout << "Zum beenden 0 wählen\n";}
+    cout << "Zum beenden 0 wählen\n";
+    }
 
 
 return 0;
